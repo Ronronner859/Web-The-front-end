@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ggtsbm');
+  src:  url('fonts/icomoon.eot?ggtsbm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ggtsbm') format('truetype'),
+    url('fonts/icomoon.woff?ggtsbm') format('woff'),
+    url('fonts/icomoon.svg?ggtsbm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-500px:before {
+  content: "\e900";
+  color: #0099e5;
+}
+.icon-adobecreativecloud:before {
+  content: "\e901";
+  color: #d41818;
+}
+.icon-amazon:before {
+  content: "\e902";
+  color: #f90;
+}
+.icon-applemusic:before {
+  content: "\e903";
+}
+.icon-archiveofourown:before {
+  content: "\e904";
+  color: #900;
+}
+.icon-buffer:before {
+  content: "\e905";
+  color: #168eea;
+}
+.icon-cpanel:before {
+  content: "\e906";
+  color: #ff6c2c;
+}
+.icon-godotengine:before {
+  content: "\e907";
+  color: #478cbf;
+}
+.icon-meteor:before {
+  content: "\e908";
+  color: #de4f4f;
+}
+.icon-microsoft:before {
+  content: "\e909";
+  color: #666;
+}
+.icon-myspace:before {
+  content: "\e90a";
+}
+.icon-slack:before {
+  content: "\e90b";
+  color: #4a154b;
+}
+.icon-spacex:before {
+  content: "\e90c";
+  color: #005288;
+}
+.icon-waze:before {
+  content: "\e90d";
+  color: #333665;
+}
+.icon-windows:before {
+  content: "\e90e";
+  color: #0078d6;
+}
+.icon-home3:before {
+  content: "\e90f";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-wink:before {
+  content: "\e9e7";
+}
+.icon-volume-mute2:before {
+  content: "\ea2a";
+}
+.icon-volume-increase:before {
+  content: "\ea2b";
+}
+.icon-arrow-up-left:before {
+  content: "\ea31";
+}
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+.icon-arrow-down:before {
+  content: "\ea36";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-flickr:before {
+  content: "\eaa3";
+}
+.icon-flickr2:before {
+  content: "\eaa4";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
