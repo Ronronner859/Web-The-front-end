@@ -1,0 +1,66 @@
+﻿img{border:0}
+ul { list-style: none; }
+div.wrapper { width: 760px;  float: left;position: relative; }
+.fn-clear { zoom: 1; }
+.box_skitter { position: relative; background: none; }
+    .box_skitter ul { display: none; }
+    .box_skitter .container_skitter { overflow: hidden; position: relative; }
+    .box_skitter .image { overflow: hidden; }
+        .box_skitter .image img { display: none; }
+    .box_skitter .box_clone { position: absolute; top: 0; left: 0; width: 100px; overflow: hidden; display: none; z-index: 20; }
+        .box_skitter .box_clone img { position: absolute; top: 0; left: 0; z-index: 20; }
+    .box_skitter .prev_button { position: absolute; top: 50%; left: -5px; z-index: 100; width: 57px; height: 62px; overflow: hidden; text-indent: -9999em; margin-top: -25px; background: url(../images/prev.png) no-repeat left top !important; }
+    .box_skitter .next_button { position: absolute; top: 50%; right: -5px; z-index: 100; width: 57px; height: 62px; overflow: hidden; text-indent: -9999em; margin-top: -25px; background: url(../images/next.png) no-repeat left top !important; }
+    .box_skitter .label_skitter { z-index: 0; position: absolute; display: none; }
+.loading { position: absolute; top: 50%; right: 50%; z-index: 10000; margin: -16px -16px; color: #fff; text-indent: -9999em; overflow: hidden; background: url(../images/ajax-loader.gif) no-repeat left top; width: 31px; height: 31px; }
+#slideshow {
+	width: 760px;
+	height: 410px;
+	float: left;
+}
+    #slideshow ul { display: none; }
+
+     div,img{
+            margin: 0;
+            padding: 0;
+        }
+        .div_first{
+            width: 980px;
+            height: 130px;
+            margin-top: 10px;
+            margin-left: auto;
+			margin-right: auto;
+            overflow: hidden;
+        }
+        .div_second{
+            width: 3920px;
+            position: relative;
+            animation: myimg 12s linear infinite normal; 
+        }
+        @keyframes myimg{
+            0{
+                left: 0;
+            }
+            5%{
+                left: 0;
+            }
+            30%{
+                left: -980px;
+            }
+            35%{
+                left: -980px;
+            }
+            60%{
+                left: -1960px;
+            }
+            65%{
+                left: -1960px;
+            }
+            95%{
+                left: -2940px;
+            }
+            100%{
+                left: -2940px;
+            }
+   
+
