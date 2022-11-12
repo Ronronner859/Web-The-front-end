@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>计数器</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+<!-- html结构 -->
+<div id="app">
+    <!-- 计数器功能区域 -->
+    <div class="input-num">
+        <button @click="sub">
+            -
+        </button>
+        <span>{{ number }}</span>
+        <button @click="add">
+            +
+        </button>
+    </div>
+
+</div>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 编码 -->
+<script>
+    // 创建Vue实例
+    var app = new Vue({
+        el: '#aqq',
+        data:{
+            number: 1
+        },
+    })
+</script>
+</body>
+
+</html>
