@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+    <!-- 引入一下vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<!-- 准备好一个容器 为vue提供模板 -->
+<div class="root">
+    <h1>hello,{{name.toUpperCase()}},{{address}},{{Date.now()}}</h1>
+</div>
+<div class="root2">
+    <h1>hello,{{name}},{{address}}</h1>
+</div>
+<script>
+    Vue.config.productionTip = false
+
+    //创建vue实例对象
+    const x = new Vue({
+        el:'.root', //用于指定当前vue实例为那个容器服务 值通常为css选择器字符串
+        data:{ //data中用于存储数据，数据供el所指定的容器去使用，值我们暂时写成一个对象
+            name:'cehnyi',
+            address:'武汉'
+        }
+    })
+    //创建vue实例对象
+    const x1 = new Vue({
+        el:'.root2', //用于指定当前vue实例为那个容器服务 值通常为css选择器字符串
+        data:{ //data中用于存储数据，数据供el所指定的容器去使用，值我们暂时写成一个对象
+            name: '武汉',
+            address:'武汉2'
+        }
+    })
+
+
+</script>
+</body>
+</html>
