@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css</title>
+		<style type="text/css">
+		/*样式书写*/
+		/*保留空格 冒号和选择器后面跟空格 一个属性写在一行上 */
+		/*css选择器 就是选择标签  就是标签选择器*/
+			p {
+				color: red;
+				font-size: 0.75rem;
+			}
+			
+			/*类选择器:口诀：样式点定义，结构类（class)调用 一个或多个 开发最常用*/
+			/*id选择器的口诀：样式#定义，结构id被调用，只能调用一次，别人切勿使用*/
+			.one {
+				color: blue;
+			}
+			.li {
+				color: #0000FF;
+				
+			}
+			.font22 {
+				font-size: 35px;
+			}
+			#header {
+				font-size: 50px;
+				color: #FF0000;
+				/*400 不变粗 700 变粗 可以不让标题标签变粗*/
+				font-weight: 100;
+				font-style: italic;
+			}
+			em {
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<p>有点意思</p>
+		<p class="one font22">这是一个p</p>
+		<ul>
+			<li class="li">生僻字</li>
+			<li class="li">冰雪</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ol>
+			<li>hello world!</li>
+			<li>江南style</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<table border="" cellspacing="" cellpadding="">
+			<tr><th id="header">Header</th></tr>
+			<tr><td>Data</td></tr>
+			<em>同桌的你</em>
+		</table>
+	</body>
+</html>

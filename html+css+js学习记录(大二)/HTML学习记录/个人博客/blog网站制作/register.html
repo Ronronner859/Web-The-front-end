@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://codepen.io/danielkvist/pen/LYNVyPL -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+  <div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1">
+        <h2 class="form__title">懒人登录</h2>
+        <input type="text" placeholder="用户名" class="input" />
+        <input type="email" placeholder="邮箱" class="input" />
+        <input type="password" placeholder="密码" class="input" />
+        <button class="btn">懒人登录</button>
+        <p><a href="./index.html">欢迎来到懒人网</a></p>
+      </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">懒人注册</h2>
+        <input type="email" placeholder="邮箱" class="input" />
+        <input type="password" placeholder="密码" class="input" />
+        <input type="password" placeholder="再次输入密码" class="input" />
+        <a href="#" class="link">确认注册</a>
+        <button class="btn">懒人注册</button>
+        <p><a href="./index.html">欢迎来到懒人网</a></p>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">懒人注册</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">懒人登录</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const signInBtn = document.getElementById("signIn");
+    const signUpBtn = document.getElementById("signUp");
+    const fistForm = document.getElementById("form1");
+    const secondForm = document.getElementById("form2");
+    const container = document.querySelector(".container");
+
+    signInBtn.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+
+    signUpBtn.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+
+    fistForm.addEventListener("submit", (e) => e.preventDefault());
+    secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+  </script>
+</body>
+
+</html>

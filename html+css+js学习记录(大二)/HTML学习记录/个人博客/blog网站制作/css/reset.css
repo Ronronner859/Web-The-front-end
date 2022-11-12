@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0
+}
+.banner{
+    background: rgba(0,0,0,0.1);
+}
+
+.two {
+    opacity: .9;
+}
+#box {
+    background:url(../img/logob2.jpg) no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+em,i {
+    font-style: normal
+}
+li {
+    list-style: none
+}
+img {
+    border: 0;
+    vertical-align: middle
+}
+button {
+    cursor: pointer
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+a:hover {
+    color: #be0915
+}
+p{
+    text-indent: 2em;
+}

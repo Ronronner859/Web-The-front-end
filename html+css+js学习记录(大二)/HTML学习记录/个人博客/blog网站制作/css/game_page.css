@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 80%;
+    height: 600px;
+    /* background-color: pink; */
+    margin: 0 auto;
+    background: url(../game/world-collapse-doomsday-scene-digital-painting.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box1{
+    width: 80%;
+    height: 920px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+.box1 .wenzi{
+    /* margin-top: 9px; */
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+.text{
+    overflow: hidden;
+    width: 100%;
+    
+    
+}
+.g{
+    float: left;
+    height: 370px;
+    width: 250px;
+    /* background-color: rgb(165, 224, 165); */
+    margin:20px 42px;
+    
+    
+}
+.g .g1{
+    font-size: 25px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.g2{
+    height: 360px;
+    background-color: pink;
+    /* background: url(../game/1.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center center;
+    
+}
+.g .b1{
+    /* background: url(../img_盒仔/Snipaste_2022-05-30_21-00-17.png); */
+}
+.wenzi p{
+    padding-top: 16px;
+    font-size: 30px;
+    color: rgb(228, 34, 34);
+}
+.box2{
+    width: 80%;
+    height: 500px;
+    background-color: rgb(167, 163, 164,.4);
+    margin: 0 auto;
+}
+.wz{
+     width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+.wz p{
+  padding-top: 16px;
+    font-size: 35px;
+    color: rgb(247, 118, 26); 
+}
+.t2 {
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+}
+.xz{
+   position: relative;
+    float: left;
+    height: 300px;
+    width: 200px;
+    margin:20px 60px;
+    margin-left: 70px;
+}
+.mc{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-40%,-90%);
+   height: 100px;
+   width: 100px;
+   text-align: center;
+}
+.mc p:nth-of-type(1)
+{
+   font-size: 22px;
+   font-weight: 700;
+   font-family: 幼圆;
+}
+.mc p:nth-of-type(2)
+{
+   font-size: 15px;
+   color: rgb(179, 154, 125);
+   padding-top: 15px;
+}
+.mc p:nth-of-type(3)
+{
+   margin:20px 20px;
+   border: 2px solid red;
+   height: 30px;
+   width: 60px;
+   line-height: 30px;
+}
+a{
+   text-decoration: none;
+}
+.box3{
+    width: 80%;
+    height: 500px;
+    background-color: rgb(66, 55, 56);
+    margin: 0 auto;
+}
+.xyou{
+     width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.xyou p{
+  padding-top: 16px;
+    font-size: 30px;
+    color: rgb(228, 34, 34); 
+}
+.footer{
+   width: 80%;
+   height: 300px;
+   background-color: pink;
+   margin: 0 auto;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?ggtsbm');
+            src:  url('fonts/icomoon.eot?ggtsbm#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?ggtsbm') format('truetype'),
+            url('fonts/icomoon.woff?ggtsbm') format('woff'),
+            url('fonts/icomoon.svg?ggtsbm#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav a:hover{
+            background-color: rgb(207, 196, 196);
+        }
+        .nav{
+            /*position:sticky;*/
+            /*top: 10px;*/
+            height: 40px;
+            background-color: #717ab1;
+            /*margin-bottom: 7px;*/
+        }
+        .nav .two{
+            margin-left: 400px;
+        }
+        .nav li{
+            float: left;
+            list-style-type: none;
+        }
+        .nav li a{
+            display: block;
+            width: 100px;
+            height: 40px;
+            color: rgb(238, 236, 223);
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+
+        }
+
+        .nav .two span{
+            font-size:17px;
+            font-style: italic;
+            font-family: 微软雅黑;
+        }
+        .f1 {
+            width: 1445px;
+            height: 260px;
+            margin: 0 auto;
+
+        }
+        .f2 {
+            float: left;
+            width: 248px;
+            height:  260px;
+         
+        }
+        .f3 {
+            width: 1197px;
+            height:  260px;
+            padding-left: 65px;
+
+        }
+        .f3 p{
+            display: inline;
+            font-size: 40px;
+            color: red;
+            font-weight: 100;
+            font-family: 华文宋体;
+
+
+        }
+        .f3 h2{
+            padding-top: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            text-indent: 1em;
+        }
+        .f3 p sub {
+            font-size: 20px;
+        }
+        .f3 p sub span {
+            color: black;
+        }
+        #f4{
+            text-decoration: line-through;
+            color: #727296;
+        }
+        #f5 {
+            color: #727296;
+        }
+        #f6{
+            font-size: 16px;
+            font-family: 华文宋体;
+            display: block;
+            color: #727272;
+
+        }
+        #f7{
+            font-size: 16px;
+            font-family: 华文宋体;
+            display: block;
+            color: #727272;
+        }
+        .f1 .nav{
+           margin-left: 65px;
+            height: 41px;
+            border-top: 3px solid white;
+            border-bottom: 5px solid black;
+            border-bottom-color: #9194b5;
+            background-color: #fefefe;
+            line-height: 41px;
+
+        }
+        .f1 .nav a{
+            /* 把a标签改成行内块元素 实现高 */
+
+            display: inline-block;
+            font-size: 35px;
+            color: #4c4c4c;
+            text-decoration: none;
+            height: 41px;
+            text-shadow: 4px 5px 6px rgba(0,0,0,.5);
+            background-image: url(imgs/Snipaste_2022-04-25_21-25-04.png);
+
+        }
+        .f8 {
+            margin-left: 65px;
+        }
+        .f8 .dun1{
+
+            color: #4e5174;
+            font-size: 25px;
+            font-weight: bold;
+            text-shadow: 4px 5px 6px rgba(0,0,0,.3);
+        }
+        .f8 .dun2{
+            font-size: 16px;
+            font-style: oblique;
+            text-indent: 2em;
+            color: #767c7d;
+        }
+        .foot{
+            margin-left: 75px;
+
+        }
+        .foot .t1{
+            font-weight: bolder;
+            font-size: 20px;
+            padding-top: 60px;
+        }
+        .foot1{
+            float: left;
+        }
+        .foot2{
+            margin-top: 35px;
+            margin-left: 60px;
+            float: left;
+        }
+        .foot2 video {
+            width: 1000px;
+            height: 600px;
+        }
+        .f3 span{
+            font-family: 'icomoon';
+        }
+        .f1 .nav .tup {
+            font-size: 25px;
+            font-family: 'icomoon';
+
+        }
+    </style>
+</head>
+<body>
+<div class="nav" id="mc">
+    <ul class="two">
+        <li><a href="#"><span>网上书店</span></a></li>
+        <li><a href="#">文学</a></li>
+        <li><a href="#">哲学</a></li>
+        <li><a href="#">历史</a></li>
+        <li><a href="#">小说</a></li>
+        <li><a href="#">少儿</a></li>
+        <li><a href="#">网络</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">音乐</a></li>
+        <li><a href="#">艺术</a></li>
+        <li><a href="#">科技</a></li>
+        <li><a href="#">人文</a></li>
+    </ul>
+</div>
+    <div class="f1">
+        <div class="f2"><img src="./img/b3.png" alt=""></div>
+        <div class="f3">
+            <h2>《活着（典藏版）》<span></span></h2>
+            <p>¥ 14.00 <sub> <span> [5折] </span> <span id="f5">[原价：<span id="f4">¥28.00</span>]</span></sub></p>
+            <p id="f6">作者：余华  出版社：作家出版社  出版时间：2010年8月
+            </p>
+            <p id="f7">《活着》是作家余华的代表作之一，讲述了在大时代背景下，主人公徐福贵的人生和家庭不断经受着苦难的故事。最终，所有亲人都先后离他而去，仅剩下年老的他和一头老牛相依为命。
+            </p>
+        </div>
+        <div class="nav">
+            <span class="tup"><a href="#">作者评价</a>&nbsp;</span>
+        </div>
+        <div class="f8">
+            <p class="dun1">《时代》周刊：</p>
+            <p class="dun2">中国过去六十年所发生的一切灾难，都一一发生在福贵和他的家庭身上。余华至真至诚的笔墨，将福贵塑造成了一个真实存在的英雄。当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺的东西。</p>
+        </div>
+        <div class="f8">
+            <p class="dun1">《华盛顿邮报》：</p>
+            <p class="dun2">《活着》是不失朴素粗粝的史诗，是斗争与生存的故事。在余华的笔下，人物在动物本能和人性之间的苦苦挣扎。余华叙述的那种冷酷的意志，使小说超出了常规。
+                影视改编</p>
+        </div>
+        <div class="nav">
+            <span><a href="#">影视改编</a></span>
+        </div>
+        <div class="foot">
+            <div class="foot1">
+                <p class="t1">《活着》——张艺谋</p>
+                <p class="t2">葛优、巩俐主演电影</p>
+            </div>
+            <div class="foot2">
+                <video src="media/v1.mp4" autoplay controls muted loop></video>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

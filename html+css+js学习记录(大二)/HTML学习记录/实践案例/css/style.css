@@ -1,0 +1,17 @@
+<style type="text/css">
+		/*多类名 统一修改*/
+			.box {
+				width: 100px;
+				height: 80px;
+				font-size: 30px;
+			}
+			.red {
+				
+				/*背景颜色*/
+				background-color: red;
+			}
+			.green {
+				
+				background-color: green;
+			}
+		</style>

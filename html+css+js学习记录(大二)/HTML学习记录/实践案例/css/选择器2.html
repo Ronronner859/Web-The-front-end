@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol il a {
+            color:red;
+        }
+        ul il {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--后代选择器：一层一层进行嵌套
+    任意基础选择器的组合-->
+
+    <ol>
+        <il>我们</il>
+        <il>我们</il>
+        <il>我们</il>
+        <il>我们</il>
+        <il>我们</il>
+        <il><a href="#">这是百度</a></il>
+        
+    </ol>
+    <ul>
+        <il>你们</il>
+        <il>你们</il>
+        <il>你们</il>
+        <il>你们</il>
+        <il>你们</il>
+        <il><a href="#">这是火狐</a></il>
+        
+    </ul>
+    <ul class="nav">
+        <il>这是个p</il>
+        <il></il>
+        <il></il>
+        <il></il>
+        <il><a href="http://www.baidu.com">baidu</a></il>
+        
+
+    </ul>
+</body>
+</html>

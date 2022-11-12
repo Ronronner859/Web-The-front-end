@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>表单域</title>
+</head>
+<style type="text/css">
+	.one{
+		
+	}
+</style>
+<body>
+	<div class="one">
+	        <!--text  文本框  value属性值
+			password  密码框 用户看不见
+			radio  单选按钮框
+			checkbox 复选按钮框
+			submit 提交按钮
+			reset 重置按钮
+			button 获取短信验证码
+			file 上传文件
+			label 增加用户体验 链接标签 for 对应 id
+			checked = checked 默认选择
+			selected="selected" 表单默认
+			-->
+		<form action="demo.php" method="post" name="name1">
+			<!--text文本框-->
+			<label for="text">用户名：<input type="text" value="请输入用户名" name="username" maxlength="6" id="text"> <br>
+			<!--password密码框-->
+			密码：<input type="password" name="psd" id="" value="" /> <br>
+			
+			性别：男<input type="radio" name="sex" value="男" checked="checked">女<input type="radio" name="sex" value="女"> <br>
+			爱好:篮球<input type="checkbox" name="box" checked="checked">街舞<input type="checkbox" name="box">网页<input type="checkbox" name="box">
+			<br>
+			<input type="submit" name="" id="" value="提交" />
+			<input type="reset" name="" id="" value="重置" />
+			<input type="button" name="" id="" value="获取短信验证码" /><br>
+			上传头像：<input type="file">
+		    性别：<input type="radio" name="sex" id="one" value="" />
+			<label for="one">男</label>
+			<input type="radio" name="" id="two" value="" />
+			<label for="two">女</label>
+			
+			<!--
+			表单控件：
+			1.input 输入元素
+			   2. select 表单元素
+			     option 子标签
+				 selected="selected" 默认
+				 
+				 3.文本域元素 textarea 定义多行的文本
+				 row 行数
+				 cols 输入数量
+				 不记  用css调整
+			-->
+			<br>
+			籍贯：
+			<select name="">
+				<option value="">湖北</option>
+				<option value="">天津</option>
+				<option value=""  selected="selected">北京</option>
+				<option value="">湖北</option>
+				<option value="">湖北</option>
+				<option value="">湖北</option>
+			</select>
+			
+			<br>
+			今日反馈:
+			<textarea rows="4" cols="100">反馈留言</textarea>
+		</form>
+		
+	</div>
+</body>
