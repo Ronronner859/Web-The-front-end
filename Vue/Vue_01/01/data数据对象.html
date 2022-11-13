@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<!--    //data数据对象-->
+    <div id="app">
+<!--        el:挂载点  div里面的是data渲染的数据 -->
+        {{message}}
+        <h1>{{school.name}}{{school.email}}</h1>
+        <ul>
+            <li>{{arr[0]}}</li>
+            <li>{{arr[1]}}</li>
+        </ul>
+    </div>
+<!--    //new一个实例-->
+    <script>
+        var vue = new Vue({
+            el:'#app',
+            data:{
+                message: 'hello',
+                school:{
+                    name:'张三',
+                    email: '192@qq.com'
+                },
+                arr:['李四','王五']
+            }
+        })
+    </script>
+
+</body>
+</html>

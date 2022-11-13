@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+<!--        data 数据在标签内部渲染-->
+        <h1 v-text="message">武汉</h1>
+        <h1 v-text="info">武汉</h1>
+<!--        差值表达式 替换指定的部分-->
+        <h1>{{message}}武汉</h1>
+    </div>
+    <script>
+        var vue = new Vue({
+            el:'#app',
+            data:{
+                message:'hello',
+                info: '哈哈'
+            }
+        })
+    </script>
+</body>
+</html>

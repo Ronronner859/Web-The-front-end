@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-on</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<!--跟dom元素的区别
+    dom操作： 1.获取事件
+            2.绑定事件
+            3.处理程序
+     v-on绑定：
+        methods提供我们需要的方法
+        v-on绑定我们的事件
+-->
+ <div id="app">
+     <input type="button" value="点击事件" v-on:click="doIt">
+     <input type="button" value="点击事件" @click="doIt">
+     <h2 @click="changeFood">{{ food }}</h2>
+ </div>
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data:{
+                food:'蛋炒饭'
+            },
+            methods:{
+                doIt: function () {
+                    alert('学vue');
+                },
+                changeFood: function () {
+                    // console.log(this.food);
+                    this.food+='哈哈哈';
+                }
+            }
+        })
+    </script>
+</body>
+</html>

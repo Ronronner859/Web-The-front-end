@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+<!--        <button value="切换显示状态" @click="changeShow"></button>-->
+        <input type="button"  value="切换显示状态" @click="changeShow">
+        <input type="button" value="年龄累加" @click="addAge">
+<!--        v-show 根据元素的真假显示元素的状态-->
+        <img src="./img/monkey.gif" alt="" v-show="isShow">
+        <img src="./img/monkey.gif" alt="" v-show="age>18">
+        <img src="./img/monkey.gif" alt="" v-show="true">
+
+
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data:{
+                isShow: false,
+                age:17
+            },
+            methods:{
+                changeShow: function () {
+                    this.isShow = !this.isShow;
+                },
+                addAge:function () {
+                    this.age++;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
