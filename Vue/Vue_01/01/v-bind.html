@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        .active{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="isImg">
+        <br>
+        <img :src="isImg" :title="title" :class="isActive?'active':''" @click="changeIsActive">
+<!--        绑定事件data里面的数据  然后进行操作 methods中的方法  数据+函数-->
+        <br>
+        <img :src="isImg" :title="title" :class="{active:isActive}" @click="changeIsActive">
+
+    </div>
+    <script>
+        let vue = new Vue({
+            el:'#app',
+            data:{
+                isImg: './img/monkey.gif',
+                title:'hello',
+                isActive: false
+            },
+            methods:{
+                changeIsActive: function () {
+                    this.isActive = !this.isActive;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

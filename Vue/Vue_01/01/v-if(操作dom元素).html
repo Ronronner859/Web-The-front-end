@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="显示" @click="changeShow">
+<!--        频繁切换用v-show 反之用v-if-->
+        <p v-if="isShow">helloworld</p>
+        <p v-show="isShow">你好</p>
+        <input type="button" value="切换" @click="changeT">
+        <p v-if="temp>30">温度太高了</p>
+    </div>
+    <script>
+        let app = new  Vue({
+            el:'#app',
+            data:{
+                isShow: false,
+                temp:29
+            },
+            methods:{
+                changeShow: function () {
+                    this.isShow = !this.isShow;
+                },
+                changeT: function () {
+                    this.temp++;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
