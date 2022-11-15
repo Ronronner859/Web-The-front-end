@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="点击" @click="doIt(66,'哥们')">
+<!--        触发的事件-->
+        <input type="text" @keyup.enter="syHi">
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+
+            },
+            methods:{
+                doIt:function (p1,p2) {
+                    console.log(p1);
+                    console.log(p2);
+                },
+                syHi:function () {
+                    alert('你好')
+                }
+            }
+        })
+    </script>
+</body>
+</html>

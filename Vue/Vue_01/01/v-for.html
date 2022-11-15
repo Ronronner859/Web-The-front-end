@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="添加" @click="add">
+    <input type="button" value="删除" @click="remove">
+    <ul>
+        <li v-for="(it,index) in arr">
+            {{index}}你好啊{{it}}
+        </li>
+    </ul>
+    <h2 v-for="it in vegetables" v-bind:title="it.name">
+        {{it.name}}
+    </h2>
+</div>
+<script>
+    let vue = new Vue({
+        el:'#app',
+        data:{
+            arr:['张三','李四','王五'],
+            vegetables:[
+                {name:'蛋炒饭'},
+                {name:'炒鸡蛋'}
+            ]
+        },
+        methods:{
+            add:function () {
+                this.vegetables.push({name:'西红柿'});
+            },
+            remove:function () {
+                this.vegetables.shift();
+            }
+        }
+    })
+</script>
+</body>
+</html>

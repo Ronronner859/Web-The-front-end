@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="改变数据" @click="getM">
+        <input type="text" v-model="message" @keyup.enter="setM">
+        <h1 v-text="message"></h1>
+        <h1>{{message}}</h1>
+        <h1 v-text="info">不一样</h1>
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                message:'helloworld',
+                info:"呵呵",
+            },
+            methods:{
+                setM:function () {
+                    alert(this.message);
+                },
+                getM:function () {
+                    this.message = "哈哈哈";
+                    this.info = "得得得";
+                }
+            }
+        })
+    </script>
+</body>
+</html>
